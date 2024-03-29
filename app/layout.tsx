@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import '@tabler/core/dist/css/tabler.min.css';
 import '../styles/index.scss';
 export const metadata = {
