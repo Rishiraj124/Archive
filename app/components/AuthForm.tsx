@@ -23,7 +23,7 @@ export default function AuthForm() {
     });
     console.log({ error, data });
     if (!error) {
-      router.push('/pages/events/create');
+      router.push('/components/event');
     } else {
       setIsSigningIn(false);
     }
