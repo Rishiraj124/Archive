@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 const UpdateEvent = () => {
   return (
     <>
@@ -9,5 +8,5 @@ const UpdateEvent = () => {
     </>
   );
 };
-
+export const runtime = 'edge';
 export default UpdateEvent;

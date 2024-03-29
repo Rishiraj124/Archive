@@ -9,4 +9,5 @@ const CreateEvent = () => {
     </>
   );
 };
+export const runtime = 'edge';
 export default CreateEvent;
