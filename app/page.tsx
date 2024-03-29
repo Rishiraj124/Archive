@@ -1,4 +1,6 @@
 import AuthForm from './components/AuthForm';
+
+export const runtime = 'edge';
 export default function Index() {
   /*
    * Replace the elements below with your own.

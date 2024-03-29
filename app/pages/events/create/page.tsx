@@ -1,5 +1,7 @@
 import SignOutButton from '@/app/components/SignOutButton';
 import './events.scss';
+
+export const runtime = 'edge';
 const CreateEvent = () => {
   return (
     <>
@@ -9,5 +11,4 @@ const CreateEvent = () => {
     </>
   );
 };
-export const runtime = 'edge';
 export default CreateEvent;
