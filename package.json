@@ -1,0 +1,44 @@
+{
+  "name": "fathers-club-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev .vercel/output/static",
+    "deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
+    "build-cf-types": "wrangler types --env-interface CloudflareEnv env.d.ts"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.5",
+    "@supabase/auth-helpers-nextjs": "^0.9.0",
+    "@supabase/ssr": "^0.1.0",
+    "@supabase/supabase-js": "^2.40.0",
+    "@tabler/core": "^1.0.0-beta20",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.10",
+    "next": "14.1.0",
+    "numeral": "^2.0.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "resend": "^3.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.11.0",
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "typescript": "^5",
+    "vercel": "^33.6.1",
+    "wrangler": "^3.38.0"
+  }
+}
