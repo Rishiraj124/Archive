@@ -1,7 +1,5 @@
 import SignOutButton from '@/app/components/SignOutButton';
 import './events.scss';
-
-export const runtime = 'edge';
 const CreateEvent = () => {
   return (
     <>
